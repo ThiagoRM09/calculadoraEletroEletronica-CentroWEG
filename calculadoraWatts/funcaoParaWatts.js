@@ -7,7 +7,7 @@ function watts() {
 
     alert(`***RESULTADOS DO ELETRODOMÉSTICO***
     
-    NOME DO ELETRODOMÉSTICO: ` + nomeEletrodomestico + 
+    NOME DO ELETRODOMÉSTICO: ` + eletrodomestico + 
     
     `
     \n-----------RESULTADOS POR DIA-------------
