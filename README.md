@@ -1,43 +1,149 @@
-# calculadoraEletroEletronica-CentroWEG
-Calculadora desenvolvida na aula de Fundamentos de Eletroeletrônica - CentroWEG em Informática Para Internet com o objetivo de calcular o consumo mensal de aparelhos.
+# ⚡ calculadoraEletroEletronica-CentroWEG
 
-⚡ Calculadora Elétrica CTWMI82
+Este projeto consiste em uma **calculadora eletroeletrônica desenvolvida em JavaScript**, capaz de realizar cálculos comuns utilizados em **eletrônica básica e elétrica**.
 
-Uma ferramenta simples e eficaz desenvolvida em JavaScript para calcular o consumo de energia e o custo financeiro mensal de eletrodomésticos, facilitando o controle de gastos domésticos.
+O objetivo do projeto é facilitar o cálculo de grandezas importantes como **tensão, corrente, resistência e potência**, além de incluir operações matemáticas auxiliares utilizadas nesses cálculos.
 
-🚀 Sobre o Projeto
+O projeto também foi criado com fins **educacionais**, servindo como prática de **lógica de programação, organização de código e modularização em JavaScript**.
 
-O CTWMI82 permite que o usuário converta a potência de seus aparelhos (seja em Watts ou Quilowatts) e descubra o impacto real na conta de luz, baseado em uma tarifa média de R$ 0,90 por kWh.
+---
 
-🛠️ Funcionalidades
+# 📁 Estrutura do Projeto
 
-Conversão Inteligente: Aceita entrada tanto em Watts (W) quanto em Quilowatts (kW).
+A estrutura do projeto está organizada em **módulos separados**, onde cada pasta contém funções responsáveis por um tipo específico de cálculo.
 
-Cálculo de Consumo: Calcula o consumo diário e mensal em kWh.
+```
+calculadoraEletroEletronica-CentroWEG
+│
+├── index.html
+├── main.js
+│
+├── calculadoraOhm
+│   └── funcaoOhm.js
+│
+├── calculadoraResistor
+│   └── funcaoResistor.js
+│
+├── calculadoraWatts
+│   ├── funcaoParaWatts.js
+│   └── funcaoParaQuiloWatts.js
+│
+└── calculadoraMult&Sub
+    └── funcaoMultSub.js
+```
 
-Estimativa de Custo: Gera o valor em Reais (R$) gasto por dia e por mês.
+Essa separação permite que cada funcionalidade fique **mais organizada, reutilizável e fácil de manter**.
 
-Interface Interativa: Utiliza diálogos de sistema (prompt e alert) para interagir com o usuário.
+---
 
-📖 Como utilizar
+# 🧠 Funcionalidades do Projeto
 
-Abra o console do seu navegador ou execute o script em um ambiente JavaScript.
+O sistema possui diferentes módulos de cálculo, cada um responsável por um tipo de operação eletroeletrônica.
 
-Insira o nome do eletrodoméstico (ex: Geladeira, Ar-condicionado).
+## 🔌 Calculadora da Lei de Ohm
 
-Escolha a unidade de medida de potência informada no selo do aparelho.
+Arquivo responsável:
 
-Informe a potência e a quantidade de horas que o aparelho fica ligado por dia.
+```
+funcaoOhm.js
+```
 
-Visualize o relatório detalhado no alerta final.
+Permite calcular as três grandezas principais da eletricidade:
 
-🧮 Fórmulas Utilizadas
+* **Tensão (V)**
+* **Corrente (I)**
+* **Resistência (R)**
 
-O cálculo segue a lógica técnica padrão para medição de energia elétrica:Para converter Watts em kWh diário:$$Consumo_{kWh} = \frac{Potência(W) \times Horas}{1000}$$Para chegar ao custo financeiro:$$Custo = Consumo_{kWh} \times Tarifa(0.90)$$
+Utilizando a fórmula da Lei de Ohm:
 
-👨‍💻 Desenvolvedor
+```
+V = R × I
+```
 
-Nome: Thiago Rafael Mathias
-Turma: MI82
+A calculadora permite descobrir qualquer uma dessas variáveis a partir das outras duas.
 
-Nota: Este projeto foi criado para fins educacionais e utiliza uma tarifa fixa de R$ 0,90. Para cálculos mais precisos, verifique o valor do kWh na fatura da sua concessionária de energia local.
+---
+
+## 🔋 Conversão de Potência Elétrica
+
+Arquivos responsáveis:
+
+```
+funcaoParaWatts.js
+funcaoParaQuiloWatts.js
+```
+
+Esse módulo permite realizar a conversão entre:
+
+* **Watts (W)**
+* **Quilowatts (kW)**
+
+Essas conversões são comuns em cálculos de consumo elétrico e potência de equipamentos.
+
+---
+
+## 🎨 Cálculo de Resistores (Código de Cores)
+
+Arquivo responsável:
+
+```
+funcaoResistor.js
+```
+
+Esse módulo realiza cálculos relacionados ao **valor de resistores utilizando o código de cores**, que é um padrão utilizado na eletrônica para identificar o valor da resistência.
+
+---
+
+## ➗ Operações Matemáticas Auxiliares
+
+Arquivo responsável:
+
+```
+funcaoMultSub.js
+```
+
+Esse módulo executa operações matemáticas básicas que auxiliam os outros cálculos:
+
+* **Multiplicação**
+* **Subtração**
+
+Essas operações são utilizadas internamente em alguns dos cálculos da calculadora.
+
+---
+
+# 🛠️ Tecnologias Utilizadas
+
+O projeto foi desenvolvido utilizando tecnologias simples e amplamente utilizadas no desenvolvimento web:
+
+* **HTML** → estrutura da interface
+* **JavaScript** → lógica e cálculos do sistema
+* **Git** → controle de versão
+* **GitHub** → hospedagem do repositório
+
+---
+
+# 🎯 Objetivo do Projeto
+
+Este projeto foi desenvolvido com foco em **aprendizado e prática de programação**, permitindo explorar conceitos como:
+
+* organização de código em módulos
+* criação de funções reutilizáveis
+* lógica de programação aplicada a problemas reais
+* aplicação de conceitos básicos de eletrônica
+
+---
+
+# 🚀 Possíveis Melhorias Futuras
+
+Algumas melhorias que podem ser implementadas no futuro incluem:
+
+* criação de uma **interface gráfica mais avançada**
+* inclusão de **novas calculadoras elétricas**
+* implementação de **mais conversores de unidades**
+* melhoria no **tratamento de erros e validação de dados**
+
+---
+
+# 👨‍💻 Autor
+
+Projeto desenvolvido por **Thiago Rafael Mathias** como prática de programação e aplicação de conceitos de eletrônica.
