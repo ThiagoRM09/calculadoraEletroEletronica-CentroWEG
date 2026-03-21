@@ -1,4 +1,4 @@
-let faixa1 = 0, faixa2 = 0, faixa3 = 0, multiplicador = 0, resistencia = 0, min = 0, max = 0;
+let faixa1 = 0, faixa2 = 0, faixa3 = 0, multiplicador = 0, min = 0, max = 0;
 
 function opcaoCalc3() {
     alert(`SEJA BEM VINDO - CALCULADORA DE RESISTÊNCIA DE UM RESISTOR!
