@@ -33,10 +33,10 @@ Desenvolvida por: Thiago Rafael Mathias - MI82.`);
 
             for(let contador = 0; contador < qtdResistencias; contador++) {
                 resistencia = parseFloat(prompt("Digite a resistência de número " + (contador + 1) + " (em Ω - Ohm): "));
-                reqParalelo += 1/resistencia;
+                reqParalelo += 1 / resistencia;
             }
 
-            reqParalelo = reqParalelo ** -1;
+            reqParalelo = 1 / reqParalelo;
 
             alert(`Com base nos ` + qtdResistencias + ` números dados, a resistência equivalente em PARALELO é: ` + reqParalelo + `Ω`);
             break;
