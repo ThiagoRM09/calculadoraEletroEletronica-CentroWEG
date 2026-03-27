@@ -1,3 +1,5 @@
+let reqSerie = 0;
+
 function opcaoCalc5() {
     alert(`SEJA BEM VINDO - CALCULADORA DE RESISTÊNCIA EQUIVALENTE EM SÉRIE E EM PARALELO!
 
@@ -10,13 +12,13 @@ Desenvolvida por: Thiago Rafael Mathias - MI82`);
     switch(escolhaEquivalente) {
         case 1:
             alert(`Você decidiu calcular a resistência equivalente de um ciruito em SÉRIE, segue abaixo a fórmula que será utilizada para o cálculo:
-\nReq = Req1 + Req2 + ... + Reqn
+\nReq = Res1 + Res2 + ... + ResN
 \nClique em 'OK' para continuar!`);
 
             let qtdResistencias = parseInt(prompt("Digite a quantidade de RESISTÊNCIAS que serão digitadas para o cálculo em SÉRIE: "));
 
-            for(let contador = 1; contador <= qtdResistencias; contador++) {
-                resistencia = parseFloat(prompt("Digite a resistência de número " + contador + " (em Ω - Ohm): "));
+            for(let contador = 0; contador < qtdResistencias; contador++) {
+                let resistencia = parseFloat(prompt("Digite a resistência de número " + (contador + 1) + " (em Ω - Ohm): "));
                 reqSerie += resistencia;
             }
 
@@ -24,7 +26,7 @@ Desenvolvida por: Thiago Rafael Mathias - MI82`);
             break;
         case 2:
             alert(`Você decidiu calcular a resistência equivalente de um ciruito em PARALELO, segue abaixo a fórmula que será utilizada para o cálculo:
-\nReq = Req1 + Req2 + ... + Reqn
+\n1/Req = 1/Res1 + 1/Res2 + ... + 1/ResN
 \nClique em 'OK' para continuar!`);
 
             qtdResistencias = parseInt(prompt("Digite a quantidade de RESISTÊNCIAS que serão digitadas para o cálculo em PARALELO: "));
