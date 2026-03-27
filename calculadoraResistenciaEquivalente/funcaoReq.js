@@ -1,4 +1,4 @@
-let reqSerie = 0, reqParalelo = 0;
+let reqSerie = 0, reqParalelo = 0, paralelo = 0;
 
 function opcaoCalc5() {
     alert(`SEJA BEM VINDO - CALCULADORA DE RESISTÊNCIA EQUIVALENTE EM SÉRIE E EM PARALELO!
@@ -36,9 +36,9 @@ Desenvolvida por: Thiago Rafael Mathias - MI82.`);
                 reqParalelo += 1 / resistencia;
             }
 
-            reqParalelo = 1 / reqParalelo;
+            paralelo = 1 / reqParalelo;
 
-            alert(`Com base nos ` + qtdResistencias + ` números dados, a resistência equivalente em PARALELO é: ` + reqParalelo + `Ω`);
+            alert(`Com base nos ` + qtdResistencias + ` números dados, a resistência equivalente em PARALELO é: ` + paralelo + `Ω`);
             break;
         default:
             alert(`Opção de cálculo de resistência equivalente INVÁLIDA!`);
