@@ -6,10 +6,11 @@ alert(`SEJA BEM-VINDO - CALCULADORA DE VÁRIAS FUNÇÕES DA AULA FUNDAMENTOS DA 
 • Uma calculadora capaz de converter valor base para múltiplo/submúltiplo OU algum múltiplo/submúltiplo para valor base!
 • Uma calculadora capaz de calcular a resistência de um RESISTOR!
 • Uma calculadora capaz de calcular a tensão, corrente e a resistência através da FÓRMULA DA LEI DE OHM!
+• Uma calculadora capaz de calcular a resistência equivalente em SÉRIE e em PARALELO!
 
 Desenvolvida por: Thiago Rafael Mathias - MI82`);
 
-let escolhaOpcaoCalc = parseInt(prompt("DIGITE UMA DAS OPÇÕES DE CALCULADORA POSSÍVEL:\n\n(1) - Calculadora de WATTS/QUILOWATTS para consumo\n(2) - Calculadora de MÚLTIPLOS e SUBMÚLTIPLOS\n(3) - Calculadora de RESISTOR\n(4) - Calculadora de LEI DE OHM\n\nUsuário, faça a sua escolha: "));
+let escolhaOpcaoCalc = parseInt(prompt("DIGITE UMA DAS OPÇÕES DE CALCULADORA POSSÍVEL:\n\n(1) - Calculadora de WATTS/QUILOWATTS para consumo\n(2) - Calculadora de MÚLTIPLOS e SUBMÚLTIPLOS\n(3) - Calculadora de RESISTOR\n(4) - Calculadora de LEI DE OHM\n(5) - Calculadora de RESISTÊNCIA EQUIVALENTE\n\nUsuário, faça a sua escolha: "));
 
 switch(escolhaOpcaoCalc) {
     case 1: 
@@ -48,6 +49,9 @@ Desenvolvida por: Thiago Rafael Mathias - MI82`);
         break;
     case 4:
         opcaoCalc4();
+        break;
+    case 5:
+        opcaoCalc5();
         break;
     default:
         alert("OPÇÃO DE CALCULADORA ESCOLHIDA INVÁLIDA!");
